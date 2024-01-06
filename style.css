@@ -19,10 +19,35 @@ body {
     font-size: 24px;
     margin-top: 20px;
 }
-#button-style {
+button {
     padding: auto;
     font-size: large;
     font: 1rem sans-serif;
     border-color: black;
     
+}
+
+#top-left {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 10px;
+}
+
+
+table {
+    border-collapse: collapse;
+}
+
+th, td {
+    min-width: 100px;
+    text-align: center;
+}
+
+table, td {
+    border: 1px solid black;
+    padding: 1px;
+}
+#capivaraCount {
+    font-weight: bold;
 }

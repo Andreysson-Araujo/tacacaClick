@@ -7,10 +7,26 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div id="top-left">
+        <table>
+            <tr>
+               <p><strong>Colaboradores</strong></p>
+                <th>Capivaras:
+                    <td id="capivaraCount">0</td>
+                </th>
+            </tr>
+            <tr>
+                <th>Boto:
+                    <td id="botoCount">0</td>
+                </th>
+            </tr>
+        </table>
+    </div>
     <div id="main-container">
         <img src="tacaca.png" alt="tacaca" id="tacaca" onclick="clickTacaca()">
     </div>
-    <button id="button-style" onclick="clickCapivara()" disabled>Capivara</button>
+    <button id="capivaraButton" onclick="clickCapivara()" disabled>Capivara</button>
+    <button id="botoButton" onclick="clickBoto()" disabled>Boto</button>
     <div id="score">0 tacacás</div>
     <script src="script.js"></script>
 </body>
