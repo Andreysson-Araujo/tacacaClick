@@ -1,5 +1,6 @@
 let score = 0;
 let capivaraCount = 0;
+let botoCount = 0;
 let intervalId;
 let autoIncrementAmount = 1;
 
@@ -48,6 +49,7 @@ function clickBoto() {
         updateScore();
         buyBoto();
         multScore();
+        buyBoto();
    }
 }
 
@@ -64,11 +66,16 @@ function buyCapivara() {
     updateCapivaraCount();
 }
 function buyBoto(){
-
+    botoCount++;
+    updateBotoCount();
 }
 
 function updateCapivaraCount() {
     document.getElementById("capivaraCount").innerText = capivaraCount;
+}
+
+function updateBotoCount() {
+    document.getElementById("botoCount").innerText = capivaraCount;
 }
 
 function startAutoIncrement() {
